@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icons/shopping-cart 1.png" type="image/x-icon">
     <!-- google-fonts: bebas neue and roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,12 @@
         rel="stylesheet">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         .font-bebas {
             font-family: "Bebas Neue", sans-serif;
         }
@@ -24,15 +31,23 @@
 </head>
 
 <body>
-    <header class="bg-amber-100 py-24 px-4 md:px-32">
+    <header class="bg-amber-100 py-16 px-4 md:px-32">
         <!-- nav section -->
-        <nav>
-
+        <nav class="flex md:justify-between items-center md:flex-row flex-col">
+            <div>
+                <img src="./icons/logo.png" alt="" class="w-72">
+            </div>
+            <div class="flex gap-14 justify-center content-center md:flex-row flex-col">
+                <div>Home </div>
+                <div>Product</div>
+                <div>About Us</div>
+                <div>Contact Us</div>
+            </div>
         </nav>
         <!-- banner section -->
-        <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row justify-between items-center py-8 md:py-16">
             <div class="space-y-3">
-                <h1 class="text-7xl uppercase font-bebas">
+                <h1 class="text-5xl md:text-7xl uppercase font-bebas">
                     <span class="text-[#FABE4C]">Be the Penguins</span>
                     <br>
                     of Winter
@@ -56,20 +71,20 @@
     </header>
     <main class="max-w-7xl mx-auto">
         <!-- women jacket section -->
-        <section class="py-12">
-            <h3 class="text-5xl font-bebas">Woman Jackets</h3>
+        <section class="py-8 md:py-12">
+            <h3 class="text-3xl md:text-5xl font-bebas">Woman Jackets</h3>
             <!-- jackets container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto">
                 <!-- jacket 1 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg p-4 md:p-6">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-1.png" alt="">
                     </div>
-                    <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+                    <h4 class="text-xl md:text-2xl font-bold">Yellow Coat Jacket</h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-4xl font-black text-orange-400">$234</h3>
+                        <h3 class="text-2xl md:text-4xl font-black text-orange-400">$234</h3>
                         <button
                             class="py-4 px-8 bg-gradient-to-r from-cyan-500  to-blue-500  rounded-xl uppercase text-white font-medium ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -82,15 +97,15 @@
                     </div>
                 </div>
                 <!-- jacket 2 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg p-4 md:p-6">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-2.png" alt="">
                     </div>
-                    <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+                    <h4 class="text-xl md:text-2xl font-bold">Yellow Coat Jacket</h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-4xl font-black text-orange-400">$234</h3>
+                        <h3 class="text-2xl md:text-4xl font-black text-orange-400">$234</h3>
                         <button
                             class="py-4 px-8 bg-gradient-to-r from-cyan-500  to-blue-500  rounded-xl uppercase text-white font-medium ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -103,15 +118,15 @@
                     </div>
                 </div>
                 <!-- jacket 3 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg p-4 md:p-6">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-3.png" alt="">
                     </div>
-                    <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+                    <h4 class="text-xl md:text-2xl font-bold">Yellow Coat Jacket</h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-4xl font-black text-orange-400">$234</h3>
+                        <h3 class="text-2xl md:text-4xl font-black text-orange-400">$234</h3>
                         <button
                             class="py-4 px-8 bg-gradient-to-r from-cyan-500  to-blue-500  rounded-xl uppercase text-white font-medium ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -126,20 +141,20 @@
             </div>
         </section>
         <!-- man jacket section -->
-        <section class="py-24">
-            <h3 class="text-5xl font-bebas">Man Jackets</h3>
+        <section class="py-8 md:py-24">
+            <h3 class="text-3xl md:text-5xl font-bebas">Man Jackets</h3>
             <!-- jackets container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto">
                 <!-- jacket 4 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg p-4 md:p-6">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-4.png" alt="">
                     </div>
-                    <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+                    <h4 class="text-xl md:text-2xl font-bold">Yellow Coat Jacket</h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-4xl font-black text-orange-400">$234</h3>
+                        <h3 class="text-2xl md:text-4xl font-black text-orange-400">$234</h3>
                         <button
                             class="py-4 px-8 bg-gradient-to-r from-cyan-500  to-blue-500  rounded-xl uppercase text-white font-medium ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -152,15 +167,15 @@
                     </div>
                 </div>
                 <!-- jacket 5 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg p-4 md:p-6">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-5.png" alt="">
                     </div>
-                    <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+                    <h4 class="text-xl md:text-2xl font-bold">Yellow Coat Jacket</h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-4xl font-black text-orange-400">$234</h3>
+                        <h3 class="text-2xl md:text-4xl font-black text-orange-400">$234</h3>
                         <button
                             class="py-4 px-8 bg-gradient-to-r from-cyan-500  to-blue-500  rounded-xl uppercase text-white font-medium ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -173,15 +188,15 @@
                     </div>
                 </div>
                 <!-- jacket 6 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg p-4 md:p-6">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-6.png" alt="">
                     </div>
-                    <h4 class="text-2xl font-bold">Yellow Coat Jacket</h4>
+                    <h4 class="text-xl md:text-2xl font-bold">Yellow Coat Jacket</h4>
                     <p>Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
                     <div class="flex justify-between items-center">
-                        <h3 class="text-4xl font-black text-orange-400">$234</h3>
+                        <h3 class="text-2xl md:text-4xl font-black text-orange-400">$234</h3>
                         <button
                             class="py-4 px-8 bg-gradient-to-r from-cyan-500  to-blue-500  rounded-xl uppercase text-white font-medium ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
@@ -195,8 +210,65 @@
                 </div>
             </div>
         </section>
+         <!-- Contact section -->
+         <section>
+            <div class="flex justify-between items-center mt-32 mb-32 gap-24 flex-col md:flex-row">
+                <div class=" gap-y-1">
+                    <!-- contact one -->
+                    <div class="flex justify-between items-center gap-12 p-6 drop-shadow-lg shadow-md mb-4 rounded-2xl">
+                        <div><img src="./icons/house.png" alt="house-image"></div>
+                        <div class="flex flex-col ">
+                            <h2>Find the Perfect Fit</h2>
+                            <p>Everybody is different, which is why we offer styles for every body.</p>  
+                        </div>
+                    </div>
+                    <!-- contact two -->
+                    <div class="flex justify-between items-center gap-10 p-6 drop-shadow-lg shadow-md mb-4 rounded-2xl">
+                        <div><img src="./icons/box.png" alt="box-icon"></div>
+                        <div class="flex flex-col">
+                            <h2>Free Exchanges</h2>
+                            <p>One of the many reasons you can shop
+                                with peace of mind.</p>
+                        </div>
+                    </div >
+                    <!-- contact three -->
+                    <div class="flex justify-between items-center gap-12 p-6 drop-shadow-lg shadow-md rounded-2xl">
+                        <div><img src="./icons/question.png" alt="question-icon"></div>
+                        <div class="flex flex-col">
+                            <h2>Contact Our Seller</h2>
+                            <p>They are here to help you. That's quite 
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div>
+                    <img src="./images/shopping.png" alt="shoppint curt">
+
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+    <footer class="bg-amber-100 py-16 px-4 md:px-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <img src="./icons/logo.png" alt="" class="w-72">
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                    amet, necessitatibus voluptates
+                    id cum culpa incidunt! </p>
+                <div class="flex gap-4">
+                    <div><img src="icons/facebook 1.png" alt="" class="w-12"></div>
+                    <div><img src="icons/twitter 1.png" alt="" class="w-12"></div>
+                    <div><img src="icons/instagram 1.png" alt="" class="w-12"></div>
+                    <div><img src="icons/linkedin 1.png" alt="" class="w-12"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-400">
+        <p class="text-gray-500">© 2024 Penguin Fashion</p>
+    </footer>
 </body>
 
 </html>
